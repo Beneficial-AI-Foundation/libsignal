@@ -37,3 +37,4 @@ Brewfile.lock.json
 __pycache__
 
 .direnv
+.aider*
