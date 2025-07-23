@@ -7,7 +7,6 @@ let
 in
 
 pkgs.mkShellNoCC {
-  # LIBCLANG_PATH="${pkgs.libclang}/lib";
   LIBCLANG_PATH = with pkgs; "${llvmPackages.libclang.lib}/lib";
   packages = with pkgs; [
     cmake
