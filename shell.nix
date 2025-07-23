@@ -6,11 +6,23 @@ let
   pkgs = import nixpkgs { config = {}; overlays = []; };
 in
 
-pkgs.mkShellNoCC {
+pkgs.mkShell {
   LIBCLANG_PATH = with pkgs; "${llvmPackages.libclang.lib}/lib";
-  packages = with pkgs; [
+  nativeBuildInputs = with pkgs; [
     cmake
     protobuf
-    libclang
+    pkg-config
+    rustc
+    cargo
+    clang
+    llvmPackages.libclang
   ];
+  buildInputs = with pkgs; [
+    stdenv.cc.cc.lib
+  ];
+  
+  shellHook = ''
+    export CC=clang
+    export CXX=clang++
+  '';
 }
