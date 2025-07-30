@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
+use vstd::prelude::*;
 use std::fmt::{Debug, Display, Formatter};
 use std::ops::{Add, Range, RangeInclusive};
 use std::str::FromStr;
@@ -210,6 +211,12 @@ fn username_sha_scalar(nickname: &str, discriminator: u64) -> Result<Scalar, Use
     hash.update([0x00]);
     hash.update(discriminator.to_be_bytes());
     Ok(Scalar::from_hash(hash))
+}
+
+verus!{
+    proof fn check_scalar(s: Scalar) {
+        assert(is_a_scalar(s));
+    }
 }
 
 fn nickname_scalar(nickname: &str) -> Result<Scalar, UsernameError> {
