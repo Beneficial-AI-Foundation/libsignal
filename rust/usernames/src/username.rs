@@ -2,7 +2,7 @@
 // Copyright 2023 Signal Messenger, LLC.
 // SPDX-License-Identifier: AGPL-3.0-only
 //
-
+use curve25519_dalek::scalar::*;
 use vstd::prelude::*;
 use std::fmt::{Debug, Display, Formatter};
 use std::ops::{Add, Range, RangeInclusive};

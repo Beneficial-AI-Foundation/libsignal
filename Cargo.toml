@@ -85,7 +85,7 @@ signal-neon-futures = { path = "rust/bridge/node/futures" }
 # that want to use the real things can depend on those directly.
 
 boring-signal = { git = "https://github.com/signalapp/boring", tag = "signal-v4.18.0", package = "boring", default-features = false }
-curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'e0d3eb63' , features = ["digest"]}
+curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63' , features = ["digest"]}
 spqr = { git = "https://github.com/signalapp/SparsePostQuantumRatchet.git", tag = "v1.2.0" }
 tokio-boring-signal = { git = "https://github.com/signalapp/boring", package = "tokio-boring", tag = "signal-v4.18.0" }
 
@@ -118,7 +118,7 @@ clap-stdin = "0.6.0"
 const-str = "0.6.2"
 criterion = "0.5"
 ctr = "0.9.2"
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'e0d3eb63', features = ["digest"] }
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63', features = ["digest"] }
 data-encoding-macro = "0.1.18"
 derive-where = "1.2.7"
 derive_more = "2.0.0"
@@ -217,16 +217,16 @@ warp = "0.3.6"
 webpsan = { version = "0.5.3", default-features = false }
 x25519-dalek = "2.0.0"
 zerocopy = "0.8.24"
-vstd = { git = "https://github.com/verus-lang/verus"}
-builtin = { git = "https://github.com/verus-lang/verus"}
-builtin_macros = { git = "https://github.com/verus-lang/verus"}
+vstd = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
+verus_builtin = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
+verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
 
 [patch.crates-io]
 # When building libsignal, just use our forks so we don't end up with two different versions of the libraries.
 
 boring = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.18.0' }
 boring-sys = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.18.0' }
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'e0d3eb63' ,  features = ["digest"]}
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63' ,  features = ["digest"]}
 tungstenite = { git = 'https://github.com/signalapp/tungstenite-rs', tag = 'signal-v0.27.0' }
 
 [profile.dev.package.argon2]
