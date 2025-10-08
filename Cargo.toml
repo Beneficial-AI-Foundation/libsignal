@@ -79,7 +79,7 @@ signal-neon-futures = { path = "rust/bridge/node/futures" }
 # that want to use the real things can depend on those directly.
 
 boring-signal = { git = "https://github.com/signalapp/boring", tag = "signal-v4.15.0", package = "boring", default-features = false }
-curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'bd605f9efc7b' , features = ["digest"]}
+curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '37ab01ec3a4f' , features = ["digest"]}
 tokio-boring-signal = { git = "https://github.com/signalapp/boring", package = "tokio-boring", tag = "signal-v4.15.0" }
 
 aes = "0.8.3"
@@ -112,7 +112,7 @@ clap-stdin = "0.6.0"
 const-str = "0.6.2"
 criterion = "0.5"
 ctr = "0.9.2"
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'bd605f9efc7b', features = ["digest"] }
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '37ab01ec3a4f', features = ["digest"] }
 derive-where = "1.2.5"
 derive_more = "2.0.0"
 dir-test = "0.4.1"
@@ -214,7 +214,7 @@ verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "bf8
 # When building libsignal, just use our forks so we don't end up with two different versions of the libraries.
 
 boring = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.15.0' }
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = 'bd605f9efc7b' ,  features = ["digest"]}
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '37ab01ec3a4f' ,  features = ["digest"]}
 
 [profile.dev.package.argon2]
 opt-level = 2 # libsignal-account-keys unit tests are too slow with an unoptimized argon2

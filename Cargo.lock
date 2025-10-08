@@ -861,7 +861,7 @@ dependencies = [
 [[package]]
 name = "curve25519-dalek"
 version = "4.1.3"
-source = "git+https://github.com/Beneficial-AI-Foundation/curve25519-dalek?rev=bd605f9efc7b#bd605f9efc7bb2f50f573669748c14d6cc19d83d"
+source = "git+https://github.com/Beneficial-AI-Foundation/curve25519-dalek?rev=37ab01ec3a4f#37ab01ec3a4fe046685579a182e86433234e69ea"
 dependencies = [
  "cfg-if",
  "cpufeatures",
@@ -880,7 +880,7 @@ dependencies = [
 [[package]]
 name = "curve25519-dalek-derive"
 version = "0.1.1"
-source = "git+https://github.com/Beneficial-AI-Foundation/curve25519-dalek?rev=bd605f9efc7b#bd605f9efc7bb2f50f573669748c14d6cc19d83d"
+source = "git+https://github.com/Beneficial-AI-Foundation/curve25519-dalek?rev=37ab01ec3a4f#37ab01ec3a4fe046685579a182e86433234e69ea"
 dependencies = [
  "proc-macro2",
  "quote",
