@@ -217,9 +217,9 @@ warp = "0.3.6"
 webpsan = { version = "0.5.3", default-features = false }
 x25519-dalek = "2.0.0"
 zerocopy = "0.8.24"
-vstd = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
-verus_builtin = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
-verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "bf8e97e852e95f277333ecd7c6515d5c1adfbf0c"}
+vstd = { git = "https://github.com/verus-lang/verus", rev = "41c5885"}
+verus_builtin = { git = "https://github.com/verus-lang/verus", rev = "41c5885"}
+verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "41c5885"}
 
 [patch.crates-io]
 # When building libsignal, just use our forks so we don't end up with two different versions of the libraries.
