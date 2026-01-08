@@ -85,7 +85,7 @@ signal-neon-futures = { path = "rust/bridge/node/futures" }
 # that want to use the real things can depend on those directly.
 
 boring-signal = { git = "https://github.com/signalapp/boring", tag = "signal-v4.18.0", package = "boring", default-features = false }
-curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63' , features = ["digest"]}
+curve25519-dalek-signal = { git = 'https://github.com/Beneficial-AI-Foundation/dalek-lite', package = "curve25519-dalek", rev = '14d41a27fc63' , features = ["digest"]}
 spqr = { git = "https://github.com/signalapp/SparsePostQuantumRatchet.git", tag = "v1.2.0" }
 tokio-boring-signal = { git = "https://github.com/signalapp/boring", package = "tokio-boring", tag = "signal-v4.18.0" }
 
@@ -118,7 +118,7 @@ clap-stdin = "0.6.0"
 const-str = "0.6.2"
 criterion = "0.5"
 ctr = "0.9.2"
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63', features = ["digest"] }
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/dalek-lite', package = "curve25519-dalek", rev = '14d41a27fc63', features = ["digest"] }
 data-encoding-macro = "0.1.18"
 derive-where = "1.2.7"
 derive_more = "2.0.0"
