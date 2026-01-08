@@ -214,7 +214,7 @@ verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "41c
 # When building libsignal, just use our forks so we don't end up with two different versions of the libraries.
 
 boring = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.15.0' }
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63' ,  features = ["digest"]}
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/dalek-lite', package = "curve25519-dalek", rev = '14d41a27fc63' ,  features = ["digest"]}
 
 [profile.dev.package.argon2]
 opt-level = 2 # libsignal-account-keys unit tests are too slow with an unoptimized argon2
