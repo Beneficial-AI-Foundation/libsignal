@@ -226,7 +226,7 @@ verus_builtin_macros = { git = "https://github.com/verus-lang/verus", rev = "41c
 
 boring = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.18.0' }
 boring-sys = { git = 'https://github.com/signalapp/boring', tag = 'signal-v4.18.0' }
-curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/curve25519-dalek', package = "curve25519-dalek", rev = '14d41a27fc63' ,  features = ["digest"]}
+curve25519-dalek = { git = 'https://github.com/Beneficial-AI-Foundation/dalek-lite', package = "curve25519-dalek", rev = '14d41a27fc63' ,  features = ["digest"]}
 tungstenite = { git = 'https://github.com/signalapp/tungstenite-rs', tag = 'signal-v0.27.0' }
 
 [profile.dev.package.argon2]
