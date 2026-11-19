@@ -915,7 +915,7 @@ dependencies = [
 [[package]]
 name = "curve25519-dalek"
 version = "4.1.3"
-source = "git+https://github.com/Beneficial-AI-Foundation/dalek-lite?rev=4df80db7#4df80db74608bd0ef017169cbcf2ac44c9b4d6ec"
+source = "git+https://github.com/Beneficial-AI-Foundation/dalek-lite?rev=9cb864bc3402ca816a4b479ced304bff37ba3b1b#9cb864bc3402ca816a4b479ced304bff37ba3b1b"
 dependencies = [
  "cfg-if",
  "cpufeatures",
@@ -5702,13 +5702,13 @@ checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 
 [[package]]
 name = "verus_builtin"
-version = "0.0.0-2026-09-16-0054"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 
 [[package]]
 name = "verus_builtin_macros"
-version = "0.0.0-2026-09-20-0158"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 dependencies = [
  "convert_case",
  "proc-macro2",
@@ -5721,8 +5721,8 @@ dependencies = [
 
 [[package]]
 name = "verus_prettyplease"
-version = "0.0.0-2026-09-06-0133"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 dependencies = [
  "proc-macro2",
  "verus_syn",
@@ -5730,8 +5730,8 @@ dependencies = [
 
 [[package]]
 name = "verus_state_machines_macros"
-version = "0.0.0-2026-09-06-0133"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 dependencies = [
  "indexmap 2.11.3",
  "proc-macro2",
@@ -5741,8 +5741,8 @@ dependencies = [
 
 [[package]]
 name = "verus_syn"
-version = "0.0.0-2026-09-06-0133"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5762,8 +5762,8 @@ dependencies = [
 
 [[package]]
 name = "vstd"
-version = "0.0.0-2026-10-04-0306"
-source = "git+https://github.com/verus-lang/verus?rev=956d529#956d529b98140c68a5d6b9e2bdcdc3db215f7320"
+version = "0.0.0-2026-11-01-0251"
+source = "git+https://github.com/verus-lang/verus?rev=8bf68ee#8bf68ee741df833ea5d0fe6a2255126fdea87e47"
 dependencies = [
  "verus_builtin",
  "verus_builtin_macros",
